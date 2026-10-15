@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="https://tv.trezio.com.br/tizen-local-test"
+        version="1.0.0"
+        viewmodes="maximized">
+  <tizen:application id="SEU_PACKAGE_ID.LocalTest"
+                     package="SEU_PACKAGE_ID"
+                     required_version="2.3"/>
+  <content src="index.html"/>
+  <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+  <icon src="icon.png"/>
+  <name>Trezioplay Local YouTube Test</name>
+  <tizen:profile name="tv-samsung"/>
+  <access origin="https://www.youtube.com" subdomains="true"/>
+  <access origin="https://www.youtube-nocookie.com" subdomains="true"/>
+  <access origin="https://googlevideo.com" subdomains="true"/>
+  <access origin="https://www.google.com" subdomains="true"/>
+  <access origin="https://tv.trezio.com.br" subdomains="true"/>
+  <tizen:privilege name="http://tizen.org/privilege/internet"/>
+  <tizen:setting screen-orientation="landscape"
+                 context-menu="enable"
+                 background-support="disable"
+                 encryption="disable"
+                 install-location="auto"
+                 hwkey-event="enable"/>
+</widget>

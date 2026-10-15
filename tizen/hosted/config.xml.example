@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="https://tv.trezio.com.br/tizen-hosted-test"
+        version="1.0.0"
+        viewmodes="maximized">
+  <tizen:application id="SEU_PACKAGE_ID.HostedTest"
+                     package="SEU_PACKAGE_ID"
+                     required_version="2.3"/>
+  <!-- Para página inicial hospedada, use tizen:content. -->
+  <tizen:content src="https://tv.trezio.com.br/youtube-test"/>
+  <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+  <icon src="icon.png"/>
+  <name>Trezioplay Hosted Diagnostic</name>
+  <tizen:profile name="tv-samsung"/>
+  <access origin="https://tv.trezio.com.br" subdomains="true"/>
+  <access origin="https://www.youtube.com" subdomains="true"/>
+  <access origin="https://www.youtube-nocookie.com" subdomains="true"/>
+  <access origin="https://googlevideo.com" subdomains="true"/>
+  <access origin="https://www.google.com" subdomains="true"/>
+</widget>
